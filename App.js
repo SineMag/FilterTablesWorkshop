@@ -14,7 +14,7 @@ root.appendChild(heading);
 
 // Favorite movies 
 const favMovies = ["Superman", "Spiderverse", "Bourne Collection"];
-favMovies.forEach(movie => {
+favMovies.map(movie => {
     const p = document.createElement("p");
     p.innerText = movie;
     root.appendChild(p);
@@ -65,7 +65,7 @@ const trainee = [
 
 // Heading for voters
 const votersHeading = document.createElement("h1");
-votersHeading.innerText = `Who can Vote:`;
+votersHeading.innerText = `Who can Vote `;
 root.appendChild(votersHeading);
 
 // Filtered age.. >= 18
